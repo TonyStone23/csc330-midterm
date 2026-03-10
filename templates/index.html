@@ -11,7 +11,10 @@
 
 <ul>
 {% for todo in todos %}
-    <li>{{ todo }}</li>
+    <li>
+        {{ todo }}
+        <a href="/delete/{{ loop.index0 }}">Delete</a>
+    </li>
 {% endfor %}
 </ul>
 
